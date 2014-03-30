@@ -15,7 +15,24 @@
                 filter: 'isFile'
               }
             ]
+          },
+          html: {
+            /* since the HTML code will be hand built in one piece, we'll just
+             * copy it to the distribution folder.
+             */
+             files: [
+               {
+                 expand: true, src: ['site/*.html'], dest: 'dist/',
+                 filter: 'isFile'
+               }, {
+                 expand: true, src: ['site/parts/*.html'], dest: 'dist/parts/',
+                 filter: 'isFile'
+               }
+             ]
           }
+
+
+
         },
         jslint: {
 
