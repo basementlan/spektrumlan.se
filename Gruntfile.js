@@ -5,9 +5,7 @@
       grunt.initConfig({
         // Task configuration
         // clean all previously built files
-        clean: {
-        default: {dist: ["dist/"]}
-        },
+        clean: ['dist/', 'out'],
         copy: {
           img: {
             //copy images to /dist folder for deployment
@@ -105,7 +103,7 @@
     grunt.loadNpmTasks('grunt-jslint');
 
     // Task definition
-      grunt.registerTask('default', ['jslint', 'clean', 'copy', 'less',
+      grunt.registerTask('default', ['clean', 'jslint', 'copy', 'less',
         'concat', 'uglify']);
 
   };
