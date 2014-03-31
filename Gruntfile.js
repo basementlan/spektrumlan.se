@@ -15,6 +15,14 @@
                 filter: 'isFile'
               }
             ]
+          },
+          fonts: {
+            files: [
+              {
+                expand: true, flatten: true, src: ['site/fonts/**'], dest: 'dist/fonts/',
+                filter: 'isFile'
+              }
+            ]
           }
         },
         jslint: {
