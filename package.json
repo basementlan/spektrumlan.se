@@ -23,6 +23,7 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-jslint": "~1.1.8",
     "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-build-html": "~0.1.0"
   }
 }

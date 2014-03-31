@@ -36,6 +36,18 @@
             }
           }
         },
+        build_html: {
+          main: {
+            options: {
+              templates: 'site/parts/**/*.html'
+            },
+            expand: true,
+            cwd: 'site/',
+            src: ['*.html'],
+            dest: 'dist/',
+            ext: '.html'
+          }
+        },
         concat: {
               options: {
                 separator: ';',
@@ -101,9 +113,10 @@
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-jslint');
+    grunt.loadNpmTasks('grunt-build-html');
 
     // Task definition
-      grunt.registerTask('default', ['clean', 'jslint', 'copy', 'less',
+      grunt.registerTask('default', ['clean', 'jslint', 'build_html', 'copy', 'less',
         'concat', 'uglify']);
 
   };
