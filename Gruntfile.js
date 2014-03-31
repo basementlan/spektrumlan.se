@@ -11,7 +11,7 @@
             //copy images to /dist folder for deployment
             files: [
               {
-                expand: true, src: ['site/img/**'], dest: 'dist/img/',
+                expand: true, cwd: 'site/img', src: ['./**'], dest: 'dist/img/',
                 filter: 'isFile'
               }
             ]
@@ -87,8 +87,8 @@
                 },
                 files: {
                   //compiling frontend.less into frontend.css
-                  "./dist/assets/stylesheets/landing.css":
-                   "./site/stylesheets/landing.less",
+                  "./dist/css/style.css":
+                   "./site/stylesheets/main.less",
                 }
             }
         },
