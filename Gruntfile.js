@@ -86,9 +86,9 @@
                   compress: true,  //minifying the result
                 },
                 files: {
-                  //compiling frontend.less into frontend.css
+                  //compiling base.less into style.css
                   "./dist/css/style.css":
-                   "./site/stylesheets/main.less",
+                   "./site/stylesheets/base.less",
                 }
             }
         },
