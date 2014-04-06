@@ -19,7 +19,8 @@
           fonts: {
             files: [
               {
-                expand: true, flatten: true, src: ['site/fonts/**'], dest: 'dist/fonts/',
+                expand: true, flatten: true, src: ['site/fonts/**',
+                "bower_components/bootstrap/fonts/**"], dest: 'dist/fonts/',
                 filter: 'isFile'
               }
             ]
