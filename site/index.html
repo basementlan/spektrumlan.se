@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-<script src="./assets/js/main.js"></script>
 
     <title>Spektrum 6.5</title>
 
@@ -23,7 +22,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="main-menu">
     <div id="landing-page-container">
       <%= include('landing') %>
     </div>
@@ -31,9 +30,9 @@
     <div id="main-content-container">
       <%= include('content') %>
     </div>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>
